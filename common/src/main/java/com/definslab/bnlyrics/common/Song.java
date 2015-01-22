@@ -50,7 +50,7 @@ public class Song implements Comparable {
     }
 
     public String toString() {
-        return title + " : " + vocal + " : " + album;
+        return title + " - " + vocal ;
     }
 
     public String formatted() {
