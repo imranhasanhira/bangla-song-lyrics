@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_search"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Title, song or anything"
+        android:background="@drawable/bg_1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/b_search"
+        android:layout_below="@+id/et_search"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff6403" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="10dp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_all_cat"
+        android:background="@drawable/bg_1" />
+
+</LinearLayout>
+
