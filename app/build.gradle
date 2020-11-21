@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
+
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "android.banglasonglyrics.definslab.com.banglasonglyrics"
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 30
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -20,7 +21,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile project(':common')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.core:core:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation project(':common')
 }
